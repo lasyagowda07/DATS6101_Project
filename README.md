@@ -2,4 +2,4 @@
 This is an Introduction to Data Science Project From Group-6
 
 The group members in the project are: -
-Kamineni Abhinaysai, Lasya Ragvendra, Magadum Neeraj, Hariharan Aakash, Ramagiri Amogh
+Kamineni Abhinaysai, Lasya Ragvendra, Magadum Neeraj, Hariharan Aakash, Amogh Ramagiri
