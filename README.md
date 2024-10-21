@@ -3,7 +3,6 @@ L.A. Crime Scene Investigation: Data-Driven Detectives
 This is an Introduction to Data Science Project From Group-6
 
 
-
 # Research Topic: - 
 The city of Los Angeles faces ongoing challenges in understanding and addressing the complexity of crime across its diverse neighborhoods. With thousands of recorded incidents varying by crime type, victim demographics, location, and modus operandi, law enforcement and city officials require deeper insights into the patterns and factors driving crime in specific areas.
 
@@ -17,6 +16,7 @@ Focus on Crime Analysis in Los Angeles from 2020 to present using a dataset cont
 
 # Dataset Information: - 
 https://catalog.data.gov/dataset/crime-data-from-2020-to-present
+
 The dataset includes detailed information on reported crimes from 2020 to the present, with approximately 950,000 rows and 28 columns. Key details include:
 1. Crime types
 2. Locations
