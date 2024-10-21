@@ -28,7 +28,7 @@ The dataset includes detailed fields such as crime status (whether the case is o
 
 The group members in the project are: -
 1. Kamineni Abhinaysai
-2. Lasya Ragvendra,
+2. Lasya Ragvendra
 3. Neeraj Magadum
 4. Aakash Hariharan
 5. Amogh Ramagiri
