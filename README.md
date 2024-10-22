@@ -1,8 +1,5 @@
 L.A. Crime Scene Investigation: Data-Driven Detectives
 
-This is an Introduction to Data Science Project From Group-6
-
-
 # Research Topic: - 
 The city of Los Angeles faces ongoing challenges in understanding and addressing the complexity of crime across its diverse neighborhoods. With thousands of recorded incidents varying by crime type, victim demographics, location, and modus operandi, law enforcement and city officials require deeper insights into the patterns and factors driving crime in specific areas.
 
@@ -12,7 +9,8 @@ Focus on Crime Analysis in Los Angeles from 2020 to present using a dataset cont
 # SMART Question: - 
 1. Which area of Los Angeles has experienced the highest increase in Theft, Robbery, and Homicide rates from 2010 to the present, and what factors (e.g., population density, economic conditions) might be contributing to this rise? Provide a year-over-year analysis to identify patterns.
 2. How does the distribution of various levels and types of crimes (Theft, Robbery, and Homicide) differ across years of Los Angeles from 2020 to the present, and which has the highest overall crime density? 
-3. How can we analyze crime trends across different regions in Los Angeles to uncover high-risk areas for specific crimes (Theft, Robbery, Homicide)?
+3. How does the type or frequency of crimes in Los Angeles vary by victim descent, and are there significant geographic patterns (based on latitude and longitude) associated with specific victim groups?
+4. Which type of crime in Los Angeles is most frequently associated with weapon use, and what specific types of weapons are most commonly involved in those incidents over the last 2 years?
 
 # Dataset Information: - 
 https://catalog.data.gov/dataset/crime-data-from-2020-to-present
