@@ -537,7 +537,7 @@ library(cluster)
 library(ggmap)
 ```
 
-```{r Path, echo=TRUE}
+```{r Summary Check, echo=TRUE}
 summary(crime_data)
 ```
 
@@ -568,11 +568,6 @@ crime_data %>%
   theme_minimal()
 
 ```
-
-
-
-
-
 
 ```{r Code Chunk-4, echo=TRUE}
 crime_data$Time_Period <- cut(crime_data$TIME.OCC, 
@@ -602,82 +597,6 @@ crime_data %>%
   geom_line(size = 1) +
   labs(title = "Crime Trend Over Time by Victim Descent", x = "Month", y = "Frequency") +
   theme_minimal()
-  theme_minimal()
-```
-
----
-title: "SMART Question-3 EDA"
-author: "Abhinaysai Kamineni"
-date: "10/20/2024"
-# date: "`r Sys.Date()`"
-output:
-  html_document:
-    code_folding: hide
-    number_sections: false
-    toc: yes
-    toc_depth: 3
-    toc_float: yes
-  pdf_document:
-    toc: yes
-    toc_depth: '3'
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r Library Installation, echo=TRUE}
-library(tidyverse)
-library(ggplot2)
-library(sf)
-library(cluster)
-library(ggmap)
-```
-
-```{r Code Chunk-1, echo=TRUE}
-summary(crime_data)
-```
-
-```{r Code Chunk-2, echo=TRUE}
-library(dplyr)
-names(crime_data)
-crime_frequency <- crime_data %>%
-summarise(Frequency = n()) %>%
-arrange(desc(Frequency))
-```
-
-```{r Code Chunk-3, echo=TRUE}
-sample_data <- crime_data %>% 
-  select(Vict.Descent, Crm.Cd.Desc, LAT, LON) %>% 
-  head(20)
-
-sample_data
-```
-
-```{r Code Chunk-4, echo=TRUE}
-crime_data %>%
-  group_by(Vict.Descent) %>%
-  summarise(Frequency = n()) %>%
-  ggplot(aes(x = Vict.Descent, y = Frequency, fill = Vict.Descent)) +
-  geom_bar(stat = "identity") +
-  labs(title = "Total Crimes by Victim Descent", x = "Victim Descent", y = "Frequency") +
-  theme_minimal()
-
-```
-
-
-```{r Code Chunk-5, echo=TRUE}
-crime_data$Time_Period <- cut(crime_data$TIME.OCC, 
-                              breaks = c(0, 600, 1200, 1800, 2400), 
-                              labels = c("Night", "Morning", "Afternoon", "Evening"))
-
-crime_data %>%
-  group_by(Vict.Descent, Time_Period) %>%
-  summarise(Frequency = n()) %>%
-  ggplot(aes(x = Vict.Descent, y = Time_Period, fill = Frequency)) +
-  geom_tile(color = "white") +
-  scale_fill_gradient(low = "lightblue", high = "darkblue") +
-  labs(title = "Crime Frequency by Victim Descent and Time of Day", x = "Victim Descent", y = "Time of Day") +
   theme_minimal()
 ```
 
