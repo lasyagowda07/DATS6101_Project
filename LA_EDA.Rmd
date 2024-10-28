@@ -98,7 +98,7 @@ print("Data after removing unnecessary columns:")
 print(names(crime_data))
 ```
 
-Question 1
+**Question 1**
 
 Which neighborhoods in Los Angeles have experienced the most significant increases in crime rates from 2020 to 2023 with particular attention to demographic factors (race and sex of victims), and what insights can be drawn from Area3's significant increase in crimes?
 
@@ -233,7 +233,7 @@ summary_table <- crime_analysis %>%
 print(summary_table)
 ```
 
-Question 2
+**Question 2**
 
 How do crime rates fluctuate during the holiday season, particularly in November and December, and what types of crimes predominantly occur during these months? Additionally, how have these patterns evolved over the years?
 
@@ -348,7 +348,7 @@ Detailed Examination: The detailed breakdown by crime type, year, and month prov
 *** END OF QUESTION 2 ***
 
 
-SMART Question 3: - How does the type or frequency of crimes in Los Angeles vary by victim descent, and are there
+**SMART Question 3:** - How does the type or frequency of crimes in Los Angeles vary by victim descent, and are there
 significant geographic patterns (based on latitude and longitude) associated with specific victim
 groups?
 
@@ -584,7 +584,8 @@ if (length(unique(geo_subset$Vict.Descent)) == 2) {
 ```
 
 
-Q4. Which crimes in Los Angeles exhibited the highest weapon usage, and which ethnicities and genders showed the most significant weapon involvement over the last five years?
+**Question 4**
+Which crimes in Los Angeles exhibited the highest weapon usage, and which ethnicities and genders showed the most significant weapon involvement over the last five years?
 
 ```{r}
 la_crime <- crime %>%
@@ -793,7 +794,7 @@ There is a statistically significant association between the two categorical var
 
 *** END OF QUESTION 4 ***
 
-Question 5:
+**Question 5:**
 How have the top three most common crimes from 2020 to the present been distributed across the top five areas where they are most frequently committed in Los Angeles, and are these trends increasing or decreasing in each area from 2020 to 2024?
 # 1. First, let's identify the top 3 crimes and top 5 areas
 ```{r}
